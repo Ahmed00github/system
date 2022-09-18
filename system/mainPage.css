@@ -1,0 +1,304 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color_txt:#ffff;
+    --color_wrong:red;
+    --color_done:green;
+    --radius:8px;
+    --padding:20px;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color_txt);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    margin-left: 25px;
+}
+hr {
+    width: 90%;
+}
+/* global */
+/* sectionMainPage */
+.sectionMainPage {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--background-color);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    padding: 25px;
+}
+.tomenu {
+    width: 100%;
+    height: 50px;
+    background-color: var(--sec-background-color);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.tomenu ul li {
+    cursor: pointer;
+    color: var(--color_txt);
+    transition: all 0.3s;
+}
+.tomenu ul li:hover {
+    color: var(--color_wrong);
+    transition: all 0.3s;
+}
+.containermainpage {
+    width: 100%;
+    /* height: calc(100% - 50px); */
+    background-color: var(--sec-background-color);
+    margin-top: 20px;
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: var(--color_txt);
+}
+.containermainpage section {
+    width: 100%;
+    /* height: calc(100% - 50px); */
+    background-color: var(--sec-background-color);
+    margin-top: 20px;
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: var(--color_txt);
+}
+.containermainpage section div {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.containermainpage section div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containermainpage section .hr div{
+    /* width: 30px; */
+    height: 10px;
+}
+.containermainpage section .hr {
+    /* background-color: green; */
+    margin-bottom: 20px;
+}
+.containermainpage .header {
+    font-size: 1.5rem;
+    color: var(--color_wrong);
+}
+.containermainpage section div button {
+    width: 70px;
+    height: 30px;
+    border-radius: 40px;
+    color: var(--color_txt);
+    background-color: var(--background-color);
+    border: 2.5px solid var(--color_wrong);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+/* ///////////////////////////////////////////////////////////// */
+.containermainpage div {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /* background-color: red; */
+}
+.containermainpage div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containermainpage .hr div{
+    /* width: 30px; */
+    height: 10px;
+}
+.containermainpage .header,.containermainpage .hr {
+    font-size: 1.5rem;
+    padding-left: 40px;
+    color: var(--color_wrong);
+}
+.containermainpage div button {
+    width: 70px;
+    height: 30px;
+    border-radius: 40px;
+    color: var(--color_txt);
+    background-color: var(--background-color);
+    border: 2.5px solid var(--color_wrong);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.ptn_delete {
+    width: 100%;
+    height: 50px;
+    background-color: var(--sec-background-color);
+    border-radius: var(--radius);
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ptn_delete div button {
+    width: 750px;
+    height: 30px;
+    border-radius: 40px;
+    color: var(--color_txt);
+    background-color: var(--background-color);
+    border: 2.5px solid var(--color_wrong);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+.ptn_delete div button:hover,.containermainpage div button:hover {
+    border: 2.5px solid var(--color_done);
+    transition: all 0.3s;
+}
+/* **************************************************************************************************************************** */
+.noAccount {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.frame {
+    width: 550px;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    /* border: 3.5px solid var(--color-wrong); */
+}
+.frame::after {
+    content: '|';
+    animation-name: word;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-size: 1.5rem;
+}
+@keyframes word {
+    0% {
+        content: 'N|';
+    }
+    4% {
+        content: 'No|';
+    }
+    8%{
+        content: 'No |';
+    }
+    12%{
+        content: 'No A|';
+    }
+    16%{
+        content: 'No Ac|';
+    }
+    20%{
+        content: 'No Acc|';
+    }
+    24%{
+        content: 'No Acc|';
+    }
+    28%{
+        content: 'No Acco|';
+    }
+    32%{
+        content: 'No Accou|';
+    }
+    36%{
+        content: 'No Accoun|';
+    }
+    40%{
+        content: 'No Account|';
+    }
+    44%{
+        content: 'No Account |';
+    }
+    48%{
+        content: 'No Account l|';
+    }
+    52%{
+        content: 'No Account lo|';
+    }
+    56%{
+        content: 'No Account log|';
+    }
+    60%{
+        content: 'No Account log |';
+    }
+    64%{
+        content: 'No Account log i|';
+    }
+    68%{
+        content: 'No Account log in|';
+    }
+    72%{
+        content: 'No Account log in |';
+    }
+    76%{
+        content: 'No Account log in n|';
+    }
+    80%{
+        content: 'No Account log in no|';
+    }
+    84%{
+        content: 'No Account log in now|';
+    }
+    88%{
+        content: 'No Account log in now!|';
+    }
+    92%{
+        content: 'No Account log in now|';
+    }
+    96%{
+        content: 'No Account log in now|';
+    }
+    100%{
+        content: 'No Account log in now|';
+    }
+}
+/* sectionMainPage */
+.hidden {
+    display: none;
+}

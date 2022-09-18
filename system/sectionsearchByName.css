@@ -1,0 +1,184 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color_txt:#ffff;
+    --color_wrong:red;
+    --color_done:green;
+    --radius:8px;
+    --padding:20px;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color_txt);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    margin-left: 25px;
+}
+hr {
+    width: 90%;
+}
+
+/* global */
+/* sectionsearchByName */
+.sectionsearchByName {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--background-color);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    padding: 25px;
+}
+.tomenu {
+    width: 100%;
+    height: 50px;
+    background-color: var(--sec-background-color);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.tomenu ul li {
+    cursor: pointer;
+    color: var(--color_txt);
+    transition: all 0.3s;
+}
+.tomenu ul li:hover {
+    color: var(--color_wrong);
+    transition: all 0.3s;
+}
+.cont_search_by_name {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--sec-background-color);
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+}
+.inp_search {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.inp_search input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    outline: none;
+    border: 3px solid var(--color_wrong);
+    background-color: var(--background-color);
+    color: var(--color_txt);
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.inp_search input:focus {
+    border: 3px solid var(--color_done);
+    transition: all 0.3s;
+}
+.data_search_by_name {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.head_data_search_name {
+    width: 100%;
+    height: 45px;
+    background-color: var(--sec-background-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    color: var(--color_wrong);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.data454 {
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+}
+.data455 {
+    padding: 15px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--sec-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: var(--color_txt);
+}
+.data454 .data455 button {
+    width: 75px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: var(--background-color);
+    color: var(--color_txt);
+    outline: none;
+    border: 3px solid var(--color_wrong);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.data454 .data455 button:hover {
+    border: 3px solid var(--color_done);
+    transition: all 0.3s;
+}
+.data454 .data455 div {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.head_data_search_name div {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* sectionsearchByName */
+.hidden {
+    display: none;
+}

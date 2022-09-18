@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title class="pageTitle">System</title>
+    <!--########################### meta ###########################-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--########################### css files ########################### -->
+    <link rel="stylesheet" href="opetion.css">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="sectionAddProduct.css">
+    <link rel="stylesheet" href="sectionsearchByName.css">
+    <link rel="stylesheet" href="sectionsearchBySearyalNum.css">
+    <link rel="stylesheet" href="sectionSeeAllProduct.css">
+    <link rel="stylesheet" href="media.css">
+    <!--########################### google fontes ###########################-->
+    <!-- font 1 "Indie Flower" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- font 2 "M PLUS 1p" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!--########################### font-awesome ###########################-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="maxcontainer">
+    <!-- **************************************************************************************************************************** -->
+    <div class="optionpage">
+        <div class="containerOptionpage">
+            <div class="mainPage">
+                <p>Main Page</p>
+            </div>
+            <div class="addProduct">
+                <p>Add products</p>
+            </div>
+            <div class="seeAllProduct">
+                <p>All products</p>
+            </div>
+            <!-- <div class="searchBySearyalNum">
+                <p>Search by searyal number</p>
+            </div> -->
+            <div class="searchByName">
+                <p>Search by name</p>
+            </div>
+            <a href="../index.html">
+                <div class="LogOut">
+                    <p>Log out</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- **************************************************************************************************************************** -->
+    <section class="sectionMainPage hidden">
+        <div class="tomenu">
+            <ul>
+                <li class="ptn_menu">Menu</li>
+            </ul>
+        </div>
+        <div class="containermainpage">
+            <div class="header">
+                    <div><p>Name</p></div>
+                    <div><p>kind</p></div>
+                    <div><p>price</p></div>
+                    <div><p>taxes</p></div>
+                    <div><p>total price</p></div>
+                    <div><p>delete</p></div>
+                    <div><p>update</p></div>
+            </div>
+            <div class="hr">
+                    <div style="padding-left: 35px;"><hr style="width: 100%;"></div>
+                    <div><hr></div>
+                    <div><hr></div>
+                    <div><hr></div>
+                    <div><hr></div>
+                    <div><hr></div>
+                    <div><hr></div>
+            </div>
+            <!-- ********************************************************** -->
+            <section class="inside">
+
+            </section>
+        </div>
+        <div class="ptn_delete">
+            <div>
+                <button class="deleteAll">Delete All</button>
+            </div>
+        </div>
+    </section>
+    <!-- ***************************************************************************************************************************** -->
+    <!-- **************************************************************************************************************************** -->
+    <section class="sectionAddProduct hidden">
+        <div class="tomenu">
+            <ul>
+                <li class="ptn_menu2">Menu</li>
+            </ul>
+        </div>
+        <div class="continerAddProduct">
+            <div class="container_inputs">
+                <div class="inp_Name">
+                    <input type="text" placeholder="Name" class="input_name">
+                </div>
+                <div class="moeny">
+                    <div class="inp_price">
+                        <input type="number" class="input_price" placeholder="Price">
+                    </div>
+                    <div class="inp_taxes">
+                        <input type="number" placeholder="Taxes" class="input_taxes">
+                    </div>
+                    <div class="total_price">
+                        <p class="total_p">Total:</p>
+                    </div>
+                </div>
+                <div class="inp_kind">
+                    <input type="text" placeholder="Kind" class="input_kind">
+                </div>
+                <div class="inp_count">
+                    <input type="number" placeholder="count" class="input_count">
+                </div>
+                <div class="ptn_create">
+                    <button class="button_create">Create</button>
+                </div>
+                <div class="ptn_create2 hidden">
+                    <button class="button_create2">cansel</button>
+                </div>
+                <div class="done_faild">
+                    <div class="done hidden">
+                        <p>Done</p>
+                    </div>
+                    <div class="faild hidden">
+                        <p>Faild</p>
+                    </div>
+                    <div class="wrong_in_create">
+                        <div class="wrong_name hidden">
+                            <p>x 1-Name requierd and should be 3 char or more</p>
+                        </div>
+                        <div class="done_name hidden">
+                            <p>true 1-Name done</p>
+                        </div>
+                        <!-- **************************************************** -->
+                        <div class="wrong_price hidden">
+                            <p>x 2-price requierd and should be more than or equal 0</p>
+                        </div>
+                        <div class="done_price hidden">
+                            <p>true 2-price done</p>
+                        </div>
+                        <!-- **************************************************** -->
+                        <div class="done_taxes hidden">
+                            <p>true 3-taxes (by default 0)</p>
+                        </div>     
+                        <!-- **************************************************** -->
+                        <div class="wrong_kind hidden">
+                            <p>x 4-Kind requierd and should be 3 char or more</p>
+                        </div>
+                        <div class="done_kind hidden">
+                            <p>true 4-Kind done</p>
+                        </div>
+                        <!-- **************************************************** -->
+                        <div class="done_count hidden">
+                            <p>true 5-count (by default 1)</p>
+                        </div>     
+                        <!-- **************************************************** -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***************************************************************************************************************************** -->
+    <!-- **************************************************************************************************************************** -->
+    <section class="sectionSeeAllProduct hidden">
+        <div class="tomenu">
+            <ul>
+                <li class="ptn_menu3">Menu</li>
+            </ul>
+        </div>
+        <div class="containerTable">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>kind</th>
+                        <th>price</th>
+                        <th>taxes</th>
+                        <th>total price</th>
+                        <th>count</th>
+                    </tr>
+                </thead>
+                <tbody class="table_body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- ***************************************************************************************************************************** -->
+    <!-- **************************************************************************************************************************** -->
+    <!-- <section class="sectionsearchBySearyalNum hidden">
+
+    </section> -->
+    <!-- ***************************************************************************************************************************** -->
+    <!-- **************************************************************************************************************************** -->
+    <section class="sectionsearchByName hidden">
+        <div class="tomenu">
+            <ul>
+                <li class="ptn_menu4">Menu</li>
+            </ul>
+        </div>
+        <div class="cont_search_by_name">
+            <div class="inp_search">
+                <input type="text" placeholder="Search by name" class="input_search_by_name">
+            </div>
+            <div class="data_search_by_name">
+                <div class="head_data_search_name">
+                    <div><p>Name</p></div>
+                    <div><p>kind</p></div>
+                    <div><p>price</p></div>
+                    <div><p>taxes</p></div>
+                    <div><p>total price</p></div>
+                    <div class="button"><p>delete</p></div>
+                    <div class="button"><p>update</p></div>
+                </div>
+                <div class="data454">
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***************************************************************************************************************************** -->
+    </div>
+    <div class="noAccount hidden">
+        <div class="frame">
+            <h1></h1>
+        </div>
+    </div>
+    <!-- js files -->
+    <script src="Single page.js"></script>
+</body>
+</html>

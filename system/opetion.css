@@ -1,0 +1,78 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color_txt:#ffff;
+    --color_wrong:red;
+    --color_done:green;
+    --radius:8px;
+    --padding:20px;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color_txt);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+li {
+    margin-left: 10px;
+}
+/* global */
+/* ############################################################################ */
+/* optionpage */
+.optionpage {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: var(--background-color);
+    padding: 35px;
+}
+.containerOptionpage {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    border-radius: var(--radius);
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+}
+.mainPage,.addProduct,.seeAllProduct,.searchBySearyalNum,.searchByName,.LogOut {
+    background-color: var(--sec-background-color);
+    border-radius: var(--radius);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_txt);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 15px 15px 105px 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+.mainPage:hover,.addProduct:hover,.seeAllProduct:hover,.searchBySearyalNum:hover,.searchByName:hover,.LogOut:hover {
+    opacity: 1;
+    transition: all 0.3s;
+}
+/* optionpage */
+.hidden {
+    display: none;
+}

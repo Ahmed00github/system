@@ -1,0 +1,254 @@
+/* variables */
+:root  {
+    --background-color:#222;
+    --sec-background-color:#111;
+    --color_txt:#ffff;
+    --color_wrong:red;
+    --color_done:green;
+    --radius:8px;
+    --padding:20px;
+}
+/* variables */
+/* ########################################################################### */
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+body {
+    background-color: var(--background-color);
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: var(--color_txt);
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    margin-left: 25px;
+}
+hr {
+    width: 90%;
+}
+/* global */
+/* sectionAddProduct */
+.sectionAddProduct {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    padding: 25px;
+}
+.tomenu {
+    width: 100%;
+    height: 50px;
+    background-color: var(--sec-background-color);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.tomenu ul li {
+    cursor: pointer;
+    color: var(--color_txt);
+    transition: all 0.3s;
+}
+.tomenu ul li:hover {
+    color: var(--color_wrong);
+    transition: all 0.3s;
+}
+.continerAddProduct {
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: var(--sec-background-color);
+    margin-top: 25px;
+    border-radius: var(--radius);
+    padding: 25px;
+}
+.container_inputs {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.inp_Name {
+    width: 100%;
+    height: 40px;
+    /* background-color: green; */
+    margin-bottom: 35px;
+}
+.inp_Name input,.inp_count input,.inp_kind input {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    outline: none;
+    border: 3px solid var(--color_wrong);
+    background-color: var(--background-color);
+    padding: 20px;
+    font-size: 1.2rem;
+    color: var(--color_txt);
+}
+
+.moeny {
+    width: 100%;
+    height: 40px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 35px;
+    /* justify-content: space-evenly; */
+}
+.inp_price,.inp_taxes,.total_price {
+    width: 380px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.inp_price input,.inp_taxes input {
+    width: 100%;
+    height: 20px;
+    background-color: var(--background-color);
+    border-radius: 40px;
+    padding: 20px;
+    font-size: 1rem;
+    outline: none;
+    border: 3px solid var(--color_wrong);
+    color: var(--color_txt);
+}
+.total_price {
+    color: var(--color_txt);
+    background-color: var(--background-color);
+    min-width: 10px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 20px;
+}
+.moeny input {
+    width: 350px;
+}
+.inp_kind {
+    width: 100%;
+    height: 40px;
+    /* background-color: green; */
+    margin-bottom: 35px;
+}
+.inp_count {
+    width: 100%;
+    height: 40px;
+    /* background-color: green; */
+    margin-bottom: 35px;
+}
+.ptn_create {
+    margin-top: 50px;
+    width: 100%;
+    height: 40px;
+    /* background-color: var(--background-color); */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.ptn_create2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    /* background-color: var(--background-color); */
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.ptn_create button,.ptn_create2 button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--background-color);
+    color: var(--color_txt);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 3px solid var(--color_wrong);
+    transition: all 0.3s;
+}
+.ptn_create button:hover,.ptn_create2 button:hover {
+    border: 3px solid var(--color_done);
+    transition: all 0.3s;
+}
+input:focus {
+    border: 3px solid var(--color_done);
+}
+.done_faild {
+    width: 100%;
+    /* height: 40px; */
+    background-color: var(--background-color);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 15px;
+}
+.done,.faild {
+    width: 50px;
+    /* height: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sec-background-color);
+    border-radius: 8px;
+    color: var(--color_txt);
+    border: 3px solid var(--color_wrong);
+    margin-right: 15px;
+}
+/* sectionAddProduct */
+/*  */
+
+.wrong_in_create {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.wrong_name,.wrong_kind,.wrong_price {
+    width: 100%;
+    height: 40px;
+    color: var(--color_wrong);
+    /* background-color: green; */
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+.done_name,.done_kind,.done_price,.done_taxes,.done_count {
+    width: 100%;
+    height: 40px;
+    color: var(--color_done);
+    /* background-color: red; */
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.2rem;
+}
+/*  */
+.hidden {
+    display: none;
+}
